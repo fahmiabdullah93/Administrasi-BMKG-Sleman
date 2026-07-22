@@ -5,6 +5,26 @@ session_start();
 //Membuat koneksi ke database di InfinityFree
 $conn = mysqli_connect("sql106.epizy.com","if0_42467295","Haters93","if0_42467295_administrasibmkg");
 
+//menambah data login
+if(isset($_POST['addnewlogin'])){
+    // Pastikan teks di dalam kurung siku sesuaikan dengan atribut name="" di HTML-mu
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Perintah Insert
+    $query_insert = "INSERT INTO login (email, password) VALUES ('$email','$password')";
+    
+    $addtotable = mysqli_query($conn, $query_insert);
+
+    if($addtotable){
+        header('location:index.php');
+    } else {
+        // Baris ini akan memunculkan pesan error asli dari MySQL ke layarmu
+        echo "Gagal masuk database! Errornya: " . mysqli_error($conn);
+        die(); 
+    }
+}
+
 
 //Menambah Barang Baru
 if(isset($_POST['addnewsurat'])){
