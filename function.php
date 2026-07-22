@@ -2,7 +2,8 @@
 session_start();
 
 //Membuat koneksi ke database
-$conn = mysqli_connect("localhost","root","","tesapk1");
+//Membuat koneksi ke database di InfinityFree
+$conn = mysqli_connect("sql106.epizy.com","if0_42467295","Haters93","if0_42467295_administrasibmkg");
 
 
 //Menambah Barang Baru
