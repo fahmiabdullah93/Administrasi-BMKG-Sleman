@@ -145,7 +145,6 @@ if(isset($_POST['hapuspersuratan'])){
                 border-radius: 4px;
             }
 
-            /* --- EFEK SHADOW DI BELAKANG TABEL & CONTAINER --- */
             .table-responsive {
                 border-radius: 10px;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 1px 8px rgba(0, 0, 0, 0.04);
@@ -154,7 +153,6 @@ if(isset($_POST['hapuspersuratan'])){
                 margin-bottom: 10px;
             }
 
-            /* --- KUSTOMISASI DESAIN TABEL & KONTROL DATA TABLES --- */
             .table {
                 color: #333333;
                 margin-bottom: 0 !important;
@@ -188,7 +186,6 @@ if(isset($_POST['hapuspersuratan'])){
                 word-wrap: break-word;
             }
 
-            /* Tata letak kontrol DataTables (Search & Length) agar berdampingan rapi */
             .dataTables_wrapper .row {
                 align-items: center;
                 margin-bottom: 15px;
@@ -212,7 +209,6 @@ if(isset($_POST['hapuspersuratan'])){
                 box-shadow: 0 0 0 0.2rem rgba(0, 135, 81, 0.25);
             }
 
-            /* Kontainer agar ikon aksi sejajar rapi ke samping */
             .action-container {
                 display: flex;
                 align-items: center;
@@ -238,7 +234,6 @@ if(isset($_POST['hapuspersuratan'])){
                 color: #dc3545;
             }
 
-            /* --- EFEK BLUR KUAT PADA LATAR BELAKANG MODAL --- */
             .modal-backdrop {
                 background-color: rgba(0, 0, 0, 0.2) !important;
             }
@@ -267,7 +262,6 @@ if(isset($_POST['hapuspersuratan'])){
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
-                        <!-- BAGIAN LOGO DIPERBARUI -->
                         <div class="brand-container">
                             <div class="bg-white d-flex justify-content-center align-items-center mr-2 shadow-sm" style="border-radius: 8px; padding: 5px; width: 42px; height: 42px;">
                                 <img src="assets/img/logo-bmkg.png" alt="BMKG" style="height: 100%; width: 100%; object-fit: contain;">
@@ -287,8 +281,8 @@ if(isset($_POST['hapuspersuratan'])){
                             <!-- MENU INFORMASI -->
                             <div class="sb-sidenav-menu-heading text-muted" style="font-size: 10px;">INFORMASI</div>
                             <a class="nav-link" href="profil.php"><div class="sb-nav-link-icon"><i class="fas fa-info-circle text-primary"></i></div>Profil BMKG</a>
-                            <a class="nav-link" href="https://www.bmkg.go.id/" target="_blank"><div class="sb-nav-link-icon"><i class="fas fa-globe text-success"></i></div>Web BMKG</a>
-                            <a class="nav-link" href="https://inatews.bmkg.go.id/wrs/index.html" target="_blank"><div class="sb-nav-link-icon"><i class="fas fa-satellite-dish text-warning"></i></div>Web WRS BMKG</a>
+                            <a class="nav-link" href="https://pelayanan-bmkg.koyeb.app/#layanan" target="_blank"><div class="sb-nav-link-icon"><i class="fas fa-globe text-success"></i></div>Web Pelayanan BMKG</a>
+                            <a class="nav-link" href="http://192.168.1.3/bmkg/" target="_blank"><div class="sb-nav-link-icon"><i class="fas fa-satellite-dish text-warning"></i></div>Web BMKG Sleman</a>
                             
                             <!-- AKUN -->
                             <div class="sb-sidenav-menu-heading text-muted" style="font-size: 10px;">AKUN</div>

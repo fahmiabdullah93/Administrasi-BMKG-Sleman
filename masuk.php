@@ -217,7 +217,7 @@ if(isset($_POST['editsuratmasuk'])){
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
-                        <!-- BAGIAN LOGO DIPERBARUI -->
+                        <!-- BAGIAN LOGO -->
                         <div class="brand-container">
                             <div class="bg-white d-flex justify-content-center align-items-center mr-2 shadow-sm" style="border-radius: 8px; padding: 5px; width: 42px; height: 42px;">
                                 <img src="assets/img/logo-bmkg.png" alt="BMKG" style="height: 100%; width: 100%; object-fit: contain;">
@@ -253,19 +253,17 @@ if(isset($_POST['editsuratmasuk'])){
                             <!-- MENU INFORMASI -->
                             <div class="sb-sidenav-menu-heading text-muted" style="font-size: 10px;">INFORMASI</div>
                             
-                            <!-- MENU PROFIL BMKG DIPERBARUI -->
                             <a class="nav-link" href="profil.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-info-circle text-primary"></i></div>
                                 Profil BMKG
                             </a>
-                            
-                            <a class="nav-link" href="https://www.bmkg.go.id/" target="_blank">
+                            <a class="nav-link" href="https://pelayanan-bmkg.koyeb.app/#layanan" target="_blank">
                                 <div class="sb-nav-link-icon"><i class="fas fa-globe text-success"></i></div>
-                                Web BMKG
+                                Web Pelayanan BMKG
                             </a>
-                            <a class="nav-link" href="https://inatews.bmkg.go.id/wrs/index.html" target="_blank">
+                            <a class="nav-link" href="http://192.168.1.3/bmkg/" target="_blank">
                                 <div class="sb-nav-link-icon"><i class="fas fa-satellite-dish text-warning"></i></div>
-                                Web WRS BMKG
+                                Web BMKG Sleman
                             </a>
 
                             <!-- AKUN -->

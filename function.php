@@ -1,12 +1,17 @@
 <?php
 session_start();
 
-//Membuat koneksi ke database
-$conn = mysqli_connect("sql113.infinityfree.com", "if0_42682779", "CGPEJ1sVhMn", "if0_42682779_eperssuratan");
+//Membuat koneksi ke database lokal (PHPMyAdmin / XAMPP)
+$conn = mysqli_connect("localhost", "root", "", "tesapk1");
 
-// ==========================================
+// Cek koneksi
+if (!$conn) {
+    die("Koneksi database gagal: " . mysqli_connect_error());
+}
+
+
 // 1. BAGIAN ADMINISTRASI BMKG SLEMAN
-// ==========================================
+
 
 // Menambah Data Administrasi
 if(isset($_POST['addnewsurat'])){
@@ -106,9 +111,9 @@ if(isset($_POST['ubahstatus'])){
 }
 
 
-// ==========================================
+
 // 2. BAGIAN SURAT MASUK
-// ==========================================
+
 
 // Menambah Surat Masuk
 if(isset($_POST['suratmasuk'])){
@@ -203,9 +208,9 @@ if(isset($_POST['hapusgudangmasuk'])){
 }
 
 
-// ==========================================
+
 // 3. BAGIAN SURAT KELUAR
-// ==========================================
+
 
 // Menambah Surat Keluar
 if(isset($_POST['suratkeluar'])){
@@ -300,9 +305,9 @@ if(isset($_POST['hapusgudangkeluar'])){
 }
 
 
-// ==========================================
+
 // 4. BAGIAN REGISTRASI AKUN
-// ==========================================
+
 if(isset($_POST['register'])){
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
@@ -345,5 +350,4 @@ if(isset($_POST['register'])){
         }
     }
 }
-
 ?>

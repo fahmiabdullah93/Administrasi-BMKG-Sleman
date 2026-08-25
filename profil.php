@@ -112,20 +112,17 @@ require 'cek.php';
 
                             <!-- MENU INFORMASI -->
                             <div class="sb-sidenav-menu-heading text-muted" style="font-size: 10px;">INFORMASI</div>
-                            
-                            <!-- Menu Profil Aktif -->
                             <a class="nav-link active" href="profil.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-info-circle text-primary"></i></div>
                                 Profil BMKG
                             </a>
-                            
-                            <a class="nav-link" href="https://www.bmkg.go.id/" target="_blank">
+                            <a class="nav-link" href="https://pelayanan-bmkg.koyeb.app/#layanan" target="_blank">
                                 <div class="sb-nav-link-icon"><i class="fas fa-globe text-success"></i></div>
-                                Web BMKG
+                                Web Pelayanan BMKG
                             </a>
-                            <a class="nav-link" href="https://inatews.bmkg.go.id/wrs/index.html" target="_blank">
+                            <a class="nav-link" href="http://192.168.1.3/bmkg/" target="_blank">
                                 <div class="sb-nav-link-icon"><i class="fas fa-satellite-dish text-warning"></i></div>
-                                Web WRS BMKG
+                                Web BMKG Sleman
                             </a>
 
                             <!-- AKUN -->
